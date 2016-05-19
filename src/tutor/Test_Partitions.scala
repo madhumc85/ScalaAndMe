@@ -1,0 +1,13 @@
+package src.tutor
+
+object Test_Partitions {
+  def main(args: Array[String]) {
+    var numbers = List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    def isEven(x: Int): Boolean = x % 2 == 0
+    var (evns, ods) = {
+      numbers partition isEven
+    }
+    println(evns)
+    println(ods)
+  }
+}
